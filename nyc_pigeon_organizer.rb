@@ -36,9 +36,9 @@ pigeon_data = {
 def nyc_pigeon_organizer(data)
   reorganized_hash = {}
   data[:gender][:male].map do |name| 
-    binding.pry
     reorganized_hash.push(name)
     end
+    binding.pry
   data[:gender][:female].map do |name|
     reorganized_hash.push(name)
    end
