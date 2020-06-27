@@ -38,9 +38,9 @@ def nyc_pigeon_organizer(data)
     value.each do |inner_key, names|
     binding.pry
       names.each do |name|
-        if !final_array[names]
+        if !final_array[name]
           binding.pry
-          final_array = name 
+          final_array[name] = {}
         end  
       end  
     end
